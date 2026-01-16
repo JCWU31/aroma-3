@@ -8,7 +8,7 @@ export const INITIAL_OILS: Omit<EssentialOil, 'id' | 'createdAt'>[] = [
     hashtags: ["經痛", "神經痛", "睡眠", "放鬆"],
     summary: "精油界的萬用刀。除了著名的助眠效果外，在疼痛管理與女性護理上也有卓越表現。",
     chemicalFamily: "酯類",
-    molecules: [{ name: "乙酸芳樟酯", percentage: "30-45%" }, { name: "芳樟醇/沈香醇", percentage: "25-38%" }],
+    molecules: [{ name: "乙酸芳樟酯", percentage: "30-45%" }, { name: "沈香醇/芳樟醇", percentage: "25-38%" }],
     physiological: "止痛、降血壓、改善冠狀動脈循環。對糖尿病神經性疼痛及經痛有顯著緩解效果。",
     psychological: "平衡神經系統，改善焦慮、憂鬱。注意：與香蜂草1:1混合可能導致過度鎮靜。",
     painManagement: "經痛、糖尿病神經性疼痛、分娩疼痛。",
@@ -152,7 +152,7 @@ export const INITIAL_OILS: Omit<EssentialOil, 'id' | 'createdAt'>[] = [
     hashtags: ["更年期", "荷爾蒙", "紓壓", "記憶"],
     summary: "女性的良伴，能平衡荷爾蒙，緩解更年期不適，並具有增強記憶力的潛力。",
     chemicalFamily: "酯類",
-    molecules: [{ name: "乙酸芳樟酯", percentage: "60-70%" }, { name: "芳樟醇/沈香醇", percentage: "10-20%" }],
+    molecules: [{ name: "乙酸芳樟酯", percentage: "60-70%" }, { name: "沈香醇/芳樟醇", percentage: "10-20%" }],
     physiological: "抗痙攣、降血壓。抑制乙醯膽鹼酯酶（可能增強記憶）。",
     psychological: "深度放鬆，抗憂鬱，緩解更年期心理壓力。",
     painManagement: "經痛、肌肉緊繃。",
@@ -240,6 +240,126 @@ export const INITIAL_OILS: Omit<EssentialOil, 'id' | 'createdAt'>[] = [
       carrierOil: "無",
       usageMethod: "深呼吸嗅吸法，幫助平復情緒與血壓。",
       frequency: "需要放鬆時使用10分鐘"
+    }
+  },
+  {
+    name: "香蜂草",
+    latinName: "Melissa officinalis",
+    hashtags: ["失智症", "躁動", "鎮靜"],
+    summary: "強效的鎮靜劑，對於改善失智症患者的躁動行為有顯著效果。",
+    chemicalFamily: "醛類",
+    molecules: [{ name: "檸檬醛", percentage: "30-40%" }, { name: "β-石竹烯", percentage: "10-15%" }],
+    physiological: "鎮靜神經、抗病毒。改善躁動行為及社交退避。",
+    psychological: "安撫極度不安的情緒。",
+    painManagement: "神經性疼痛。",
+    safety: "可能導致過度鎮靜，與薰衣草1:1混合時需注意。",
+    literature: {
+      level: "Study",
+      subjects: "重度失智症患者",
+      conclusion: "可降低重度失智症患者不安，有助於改善躁動行為及社交退避。"
+    },
+    recipe: {
+      concentration: "擴香",
+      oilDrops: "香蜂草精油",
+      carrierOil: "無",
+      usageMethod: "室內擴香，安撫患者情緒。",
+      frequency: "每日"
+    }
+  },
+  {
+    name: "紅檜/扁柏",
+    latinName: "Chamaecyparis formosensis",
+    hashtags: ["壓力", "自律神經", "放鬆"],
+    summary: "台灣特有的森林氣息，能有效調節自律神經系統。",
+    chemicalFamily: "倍半萜烯",
+    molecules: [{ name: "α-蒎烯", percentage: "N/A" }],
+    physiological: "降低交感神經活性（解除緊繃），或降低副交感活性（集中專注，黃檜）。",
+    psychological: "舒緩巨大壓力，改善工作疲勞。",
+    painManagement: "肌肉緊繃。",
+    safety: "安全。",
+    literature: {
+      level: "Study",
+      subjects: "上班族",
+      conclusion: "嗅吸20分鐘，HRV（心率變異度）明顯高於對照組，有效舒緩壓力。"
+    },
+    recipe: {
+      concentration: "嗅吸",
+      oilDrops: "日本扁柏/紅檜精油",
+      carrierOil: "無",
+      usageMethod: "嗅吸5-20分鐘。",
+      frequency: "每日"
+    }
+  },
+  {
+    name: "大馬士革玫瑰",
+    latinName: "Rosa damascena",
+    hashtags: ["更年期", "性功能", "荷爾蒙", "情緒"],
+    summary: "花中之后，對生殖系統與情緒有深層的調節作用。",
+    chemicalFamily: "單萜醇",
+    molecules: [{ name: "香茅醇", percentage: "30-50%" }, { name: "格蘭尼奧", percentage: "15-25%" }],
+    physiological: "改善男性性功能及睪固酮；改善更年期熱潮紅。口服純露可改善糖尿病肝腎功能。",
+    psychological: "提升自尊，抗憂鬱，撫平創傷。",
+    painManagement: "經痛。",
+    safety: "懷孕初期慎用。",
+    literature: {
+      level: "Double-blind RCT",
+      subjects: "男性鴉片類藥物使用者",
+      conclusion: "改善性功能及睪固酮水平。"
+    },
+    recipe: {
+      concentration: "複方",
+      oilDrops: "薰衣草4 + 玫瑰天竺葵2 + 玫瑰1 + 茉莉1",
+      carrierOil: "基底油",
+      usageMethod: "按摩，改善更年期熱潮紅、憂鬱和疼痛。",
+      frequency: "每週按摩"
+    }
+  },
+  {
+    name: "黑胡椒",
+    latinName: "Piper nigrum",
+    hashtags: ["戒菸", "循環", "消化"],
+    summary: "溫暖的辛香料，能激勵身心，並有助於克服菸癮。",
+    chemicalFamily: "倍半萜烯",
+    molecules: [{ name: "β-石竹烯", percentage: "20-30%" }],
+    physiological: "促進血液循環，幫助戒菸（緩解戒斷症狀）。保護神經（胡椒鹼）。",
+    psychological: "增強意志力。",
+    painManagement: "肌肉僵硬。",
+    safety: "高濃度可能刺激皮膚。",
+    literature: {
+      level: "Study",
+      subjects: "吸菸者",
+      conclusion: "吸入黑胡椒精油蒸氣可減少吸菸戒斷症狀。"
+    },
+    recipe: {
+      concentration: "嗅吸",
+      oilDrops: "黑胡椒精油",
+      carrierOil: "無",
+      usageMethod: "菸癮來襲時嗅吸。",
+      frequency: "需要時"
+    }
+  },
+  {
+    name: "德國洋甘菊",
+    latinName: "Matricaria recutita",
+    hashtags: ["過敏", "抗發炎", "皮膚"],
+    summary: "藍色的奇蹟，強效抗組織胺與抗發炎。",
+    chemicalFamily: "倍半萜烯",
+    molecules: [{ name: "母菊天藍烴", percentage: "5-15%" }, { name: "α-沒藥醇", percentage: "20-40%" }],
+    physiological: "抑制肥大細胞釋放組織胺（抗過敏），抗發炎，促進傷口癒合。",
+    psychological: "平靜鎮定，但可能會降低記憶力和注意力速度。",
+    painManagement: "發炎性疼痛。",
+    safety: "通經作用，孕婦慎用。",
+    literature: {
+      level: "Study",
+      subjects: "過敏模型",
+      conclusion: "具有抗過敏活性，能抑制肥大細胞介導的過敏反應。"
+    },
+    recipe: {
+      concentration: "1-3%",
+      oilDrops: "德國洋甘菊",
+      carrierOil: "金盞花浸泡油",
+      usageMethod: "塗抹於過敏或發炎皮膚。",
+      frequency: "每日數次"
     }
   }
 ];
