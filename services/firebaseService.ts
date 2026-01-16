@@ -26,7 +26,8 @@ if (firebaseConfig.apiKey && firebaseConfig.projectId) {
   }
 }
 
-const LOCAL_STORAGE_KEY = 'aroma_manager_oils_v1';
+// Updated version to v2 to force re-seed with new literature data
+const LOCAL_STORAGE_KEY = 'aroma_manager_oils_v2';
 
 const getLocalOils = (): EssentialOil[] => {
   const stored = localStorage.getItem(LOCAL_STORAGE_KEY);
