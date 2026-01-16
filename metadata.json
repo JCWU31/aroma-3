@@ -1,0 +1,5 @@
+{
+  "name": "Aroma Manager",
+  "description": "A comprehensive essential oil management system allowing users to track chemical compositions, therapeutic benefits, and safety data with offline capabilities.",
+  "requestFramePermissions": []
+}
